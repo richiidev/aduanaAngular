@@ -1,0 +1,42 @@
+<div class="sidebar">
+    <div class="row iconsbar">
+
+        <div class="div sidebarinfo asd">
+            <p>Administrador</p>
+            <a class="navbar-brand">
+                <p class="n">Ricardo Vazquez</p>
+            </a>
+        </div>
+    </div>
+    <hr class="text-white">
+    <div id="getReportes" class="row iconsbar" (click)="getUsuarios()">
+        <div class="col">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="div sidebarinfo">
+            <p class="div">Get Users</p>
+        </div>
+    </div>
+    <div id="getReportes" class="row iconsbar" (click)="getPagos()">
+        <div class="col">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="div sidebarinfo">
+            <p class="div">Get Users</p>
+        </div>
+    </div>
+    <div id="getReportes" class="row iconsbar" (click)="getFacturas()">
+        <div class="col">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="div sidebarinfo">
+            <p class="div">Get Users</p>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid">
+    <app-users *ngIf="usuarios==true"></app-users>
+    <app-facturas *ngIf="facturas==true"></app-facturas>
+    <app-pagos *ngIf="pagos==true"></app-pagos>
+</div>
